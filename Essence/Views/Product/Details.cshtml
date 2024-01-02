@@ -1,0 +1,112 @@
+﻿@model ProductGetDTO
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<input type="hidden" id="productId" value="@Model.Id" />
+<section class="single_product_details_area d-flex align-items-center">
+
+    <div class="single_product_thumb clearfix">
+        <div class="product_thumbnail_slides owl-carousel">
+            <img src="~/img/product-img/product-big-1.jpg" alt="">
+            <img src="~/img/product-img/product-big-2.jpg" alt="">
+            <img src="~/img/product-img/product-big-3.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="single_product_desc clearfix">
+        <span>mango</span>
+        <a href="cart.html">
+            <h2>@Model.Name</h2>
+        </a>
+        @if (Model.Discount > 0)
+        {
+            <p class="product-price"><span class="old-price">$@Model.SalePrice</span> $@(Model.SalePrice - Model.Discount)</p>
+        }
+        else
+        {
+            <p class="product-price"> $@Model.SalePrice</p>
+        }
+        <p class="product-desc">@Html.Raw(Model.Description)</p>
+
+        <form class="cart-form clearfix" method="post">
+
+            <div class="select-box d-flex mt-50 mb-30">
+                <select name="select" id="productSize" class="form-control mr-5">
+                    @foreach (var size in Model.Colors.First().Sizes)
+                    {
+                        <option value="@size.Id">Size: @size.SizeName</option>
+                    }
+                </select>
+                <select name="select" id="productColor" class="form-control">
+                    @foreach (var color in Model.Colors)
+                    {
+                        <option value="@color.Id">Color: @color.Name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="cart-fav-box d-flex align-items-center">
+
+                <button type="button" class="btn essence-btn" id="addToCart">Add to cart</button>
+
+                <div class="product-favourite ml-4">
+                    <a href="#" class="favme fa fa-heart"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+@section styles{
+}
+
+@section Scripts{
+
+    <script>
+        let colorSelect = $('#productColor');
+        let productId = $('#productId').val();
+        let productSize = $('#productSize');
+        colorSelect.on('change', function () {
+            let id = $(this).val();
+            let url = `/product/getsize?productId=${productId}&colorId=${id}`;
+
+            fetch(url)
+                .then(res => res.text())
+                .then(data => {
+                    $('#productSize').html(data);
+                });
+        });
+
+        let addToCart = $('#addToCart');
+        addToCart.on('click', function () {
+            let colorId = colorSelect.val();
+            let sizeId = productSize.val();
+            let url = `/add-to-cart?productId=${productId}&colorId=${colorId}&sizeId=${sizeId}`;
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    toastr[data.status](data.message)
+
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": false,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                });
+        });
+    </script>
+}
+

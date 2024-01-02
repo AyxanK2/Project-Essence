@@ -1,0 +1,46 @@
+﻿@model ProductColorSizeDTO
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="pagetitle">
+    <h1>General Tables</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="dashboard">Home</a></li>
+            <li class="breadcrumb-item"><a asp-action="index">Products</a></li>
+            <li class="breadcrumb-item">Create</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section">
+    <div class="row">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Product Color Size</h5>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label>Product</label>
+                        <input class="form-control" value="@Model.ProductName" disabled />
+                    </div>
+                    <div class="mb-3">
+                        <label>Color</label>
+                        <input class="form-control" value="@Model.ColorName" disabled />
+                    </div>
+                    <div class="mb-3">
+                        <label>Size</label>
+                        <input class="form-control" value="@Model.SizeName" disabled />
+                    </div>
+                    <div class="mb-3">
+                        <label>Count</label>
+                        <input class="form-control" asp-for="Count" />
+                        <span asp-validation-for="Count"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

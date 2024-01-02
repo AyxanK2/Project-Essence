@@ -1,0 +1,125 @@
+﻿@model ProductPostDTO
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="pagetitle">
+    <h1>General Tables</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="dashboard">Home</a></li>
+            <li class="breadcrumb-item"><a asp-action="index">Products</a></li>
+            <li class="breadcrumb-item">Product Create</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section">
+    <div class="row">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Product Create</h5>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input class="form-control" asp-for="Name" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Sale Price</label>
+                        <input class="form-control" asp-for="SalePrice" />
+                        <span asp-validation-for="SalePrice"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Discount</label>
+                        <input class="form-control" asp-for="Discount" />
+                        <span asp-validation-for="Discount"></span>
+                    </div>
+                    <label for="validationCustomUsername" class="form-label">Description</label>
+                    <div class="input-group has-validation">
+                        <textarea asp-for="Description" id="editor1" class="form-control"></textarea>
+                        <span class="invalid-feedback" style="display:block" asp-validation-for="Description">
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label>TopCategory</label>
+                        <select asp-for="TopCategoryId" class="form-select">    
+                            <option value="">Choose a category</option>
+                            @foreach (Category category in ViewBag.TopCategories)
+                            {
+                                <option value="@category.Id">@category.Name </option>
+                            }
+                        </select>
+                        <span asp-validation-for="TopCategoryId"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>SubCategory</label>
+                        <select asp-for="SubCategoryId" class="form-select">
+                            <option value="">Choose a category</option>
+                            @foreach (Category category in ViewBag.SubCategories)
+                            {
+                                <option value="@category.Id">@category.Name </option>
+                            }
+                        </select>
+                        <span asp-validation-for="SubCategoryId"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Brand</label>
+                        <select asp-for="BrandId" class="form-select">
+                            <option value="">Choose a brand</option>
+                            @foreach (Brand brand in ViewBag.Brands)
+                            {
+                                <option value="@brand.Id">@brand.Name </option>
+                            }
+                        </select>
+                        <span asp-validation-for="BrandId"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Color</label>
+                        <select asp-for="ColorIds" class="form-select js-example-basic-multiple" multiple>
+                            <option value="">Choose a color</option>
+                            @foreach (Color color in ViewBag.Colors)
+                            {
+                                <option value="@color.Id">@color.Name </option>
+                            }
+                        </select>
+                        <span asp-validation-for="ColorIds"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Images</label>
+                        <input class="form-control file-upload-default" multiple asp-for="Files" />
+                        <span asp-validation-for="Files"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section CSS{
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+}
+
+@section JS{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor1'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+}
+

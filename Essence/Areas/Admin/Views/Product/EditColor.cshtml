@@ -1,0 +1,62 @@
+﻿@model ProductColorPutDTO
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="pagetitle">
+    <h1>General Tables</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="dashboard">Home</a></li>
+            <li class="breadcrumb-item"><a asp-action="index">Products</a></li>
+            <li class="breadcrumb-item">Products</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section">
+    <div class="row">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Products</h5>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label>Product</label>
+                        <input class="form-control" value="@Model.ProductName" disabled />
+                    </div>
+                    <div class="mb-3">
+                        <label>Color</label>
+                        <input class="form-control" value="@Model.ColorName" disabled />
+                    </div>
+                    <div class="mb-3">
+                        <label>Sizes</label>
+                        <select asp-for="SizeIds" class="form-select js-example-basic-multiple" multiple>
+                            @foreach (Size size in ViewBag.Sizes)
+                            {
+                                <option value="@size.Id">@size.ShortName</option>
+                            }
+                        </select>
+                        <span asp-validation-for="SizeIds"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section CSS{
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+}
+
+@section JS{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+}

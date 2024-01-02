@@ -1,0 +1,43 @@
+﻿@model BrandPutDTO
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="pagetitle">
+    <h1>General Tables</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="dashboard">Home</a></li>
+            <li class="breadcrumb-item"><a asp-action="index">Brands</a></li>
+            <li class="breadcrumb-item">Brand Edit</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section">
+    <div class="row">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Brand Edit</h5>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input class="form-control" asp-for="Name" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Image</label>
+                        <input class="form-control" asp-for="File" />
+                        <div class="image-box">
+                            <img src="~/uploads/brands/@Model.Image"  />
+                        </div>
+                        <span asp-validation-for="File"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

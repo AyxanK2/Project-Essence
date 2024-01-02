@@ -1,0 +1,7 @@
+﻿@model ProductColor
+<select name="select" class="mr-5">
+    @foreach (ProductColorSize item in Model.ProductColorSizes)
+    {
+        <option value="@item.SizeId"> Size : @item.Size.ShortName</option>
+    }
+</select>

@@ -1,0 +1,40 @@
+﻿@model SizePostDTO
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="pagetitle">
+    <h1>General Tables</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="dashboard">Home</a></li>
+            <li class="breadcrumb-item"><a asp-action="index">Sizes</a></li>
+            <li class="breadcrumb-item">Size Edit</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section">
+    <div class="row">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Size Edit</h5>
+                <form method="post">
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input class="form-control" asp-for="Name" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label>Short Name</label>
+                        <input class="form-control" asp-for="ShortName" />
+                        <span asp-validation-for="ShortName"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
