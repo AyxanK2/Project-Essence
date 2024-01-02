@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wCVIMxp8oo/z0OePd3iOtzsVOjexqg10IrGqnH7tPtppWgUFtCV7axkKGzYrqLN8KLfuyw8Rx0L2RXQUp6nDXQ==",
+  "dgSpecHash": "Ec6ilvX+lG9YGjn/hhznpRTmGAG2se3Rauh6cSf1lDdyvRZtFRkbuxjyrZqzcZAb2NtbQxMkM1ZZM9ntrsLIhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\Essence.Data.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\Essence.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

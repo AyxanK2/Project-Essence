@@ -3123,11 +3123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Repository1\\Essence.Repository1.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Repository1\\Essence.Repository1.csproj",
       "projectName": "Essence.Repository1",
-      "projectPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Repository1\\Essence.Repository1.csproj",
+      "projectPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Repository1\\Essence.Repository1.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Repository1\\obj\\",
+      "outputPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Repository1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3144,8 +3144,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\Essence.Data.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\Essence.Data.csproj"
+            "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\Essence.Data.csproj": {
+              "projectPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\Essence.Data.csproj"
             }
           }
         }

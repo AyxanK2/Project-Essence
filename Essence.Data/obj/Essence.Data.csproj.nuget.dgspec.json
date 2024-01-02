@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\Essence.Data.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\Essence.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\Essence.Data.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\Essence.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\Essence.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\Essence.Data.csproj",
         "projectName": "Essence.Data",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\Essence.Data.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\Essence.Data.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\MVC code\\Essence.Data\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Ayxan\\C# codes\\Project-essence\\Essence.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
