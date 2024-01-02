@@ -1,0 +1,14 @@
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\bin\Debug\net6.0\Essence.Data.deps.json
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\bin\Debug\net6.0\Essence.Data.pdb
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.dll
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\refint\Essence.Data.dll
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.pdb
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\ref\Essence.Data.dll
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\bin\Debug\net6.0\Essence.Data.runtimeconfig.json
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\obj\Debug\net6.0\Essence.Data.genruntimeconfig.cache
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Data\bin\Debug\net6.0\Essence.Data.dll

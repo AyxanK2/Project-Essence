@@ -1,0 +1,15 @@
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\bin\Debug\net6.0\Essence.Repository1.deps.json
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\bin\Debug\net6.0\Essence.Repository1.dll
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\bin\Debug\net6.0\Essence.Repository1.pdb
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\bin\Debug\net6.0\Essence.Data.dll
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\bin\Debug\net6.0\Essence.Data.pdb
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.csproj.CopyComplete
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.dll
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\refint\Essence.Repository1.dll
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\Essence.Repository1.pdb
+C:\Users\Asus\Desktop\Ayxan\C# codes\MVC code\Essence.Repository1\obj\Debug\net6.0\ref\Essence.Repository1.dll
